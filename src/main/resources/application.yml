@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: @project.name@
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=public
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: true
+
+springdoc:
+  title: @project.name@
+  description: @project.description@
+  version: @project.version@
+
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  api-docs:
+    version: openapi_3_1
+  swagger-ui:
+    operations-sorter: alpha
+
+app:
+  error:
+    handling:
+      logging-level: all

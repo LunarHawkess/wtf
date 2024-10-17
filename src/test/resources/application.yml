@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=test
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: true
+
+app:
+  error:
+    handling:
+      logging-level: all
